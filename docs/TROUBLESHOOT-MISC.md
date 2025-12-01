@@ -44,6 +44,7 @@ Reminder that once this is done, you'll need to select OpenCore in the boot pick
 With OpenCore Legacy Patcher, we rely on Apple Secure Boot to ensure OS updates work correctly and reliably with Big Sur. However this installs NVRAM variables that will confuse your Mac if not running with OpenCore. To resolve this, simply uninstall OpenCore and [reset NVRAM](https://support.apple.com/en-mide/HT201255).
 
 * Note: Machines with modified root volumes will also result in an infinite recovery loop until integrity is restored.
+* AND SO WHAT DO I DO NEXT???? Without OpenCore installed my machine won't boot because it's booting an OCLP-supported OS. Reset the NVRAM and then re-install OCLP? Seems like that would confuse it again! Eeeeeeek!  
 
 ## Stuck on boot after root patching
 
@@ -142,6 +143,7 @@ Head into the GUI, go to Patcher Settings, and toggle the bits you need disabled
 | SIP Enabled | SIP Lowered (Root Patching) | SIP Disabled |
 | :--- | :--- | :--- |
 | ![](./images/OCLP-GUI-Settings-SIP-Enabled.png) | ![](./images/OCLP-GUI-Settings-SIP-Root-Patch.png) | ![](./images/OCLP-GUI-Settings-SIP-Disabled.png) |
+
 
 
 
